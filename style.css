@@ -1,0 +1,131 @@
+/* Global reset and font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+    background: #002339;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container setup */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Heading Styles */
+.container h1 {
+    font-weight: 200;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.container h1 span {
+    color: #08932d;
+    border-bottom: 4px solid #05612a;
+    padding-bottom: 7px;
+    
+}
+
+/* Display Input Area */
+.display {
+    width: 75%;
+    margin: 0 auto;
+    height: 50px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Input field styles */
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 2s ease;
+}
+
+/* Input focus effect */
+.display input:focus {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    border: 1px solid #08932d;
+}
+
+/* Image inside the display area (copy icon) */
+.display img {
+    width: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for the copy image */
+.display img:hover {
+    transform: scale(1.2);
+}
+
+/* Button Styles */
+.container button {
+    margin-top: 20px;
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+/* Button hover effect */
+.container button:hover {
+    background: #017d46;
+    box-shadow: 0 5px 15px rgba(0, 159, 85, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Image inside the button (generate icon) */
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+/* Button active effect (when clicked) */
+.container button:active {
+    transform: translateY(2px);
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 35px;
+    }
+    .display input {
+        font-size: 20px;
+    }
+    .container button {
+        font-size: 16px;
+    }
+}
